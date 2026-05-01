@@ -172,7 +172,7 @@ function ch(x) {
 
 
 function home() {
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
 }
 
 const trigger = document.getElementById('trigger');
@@ -380,15 +380,3 @@ uncheck();
 
 
 
-let krd1 = document.getElementById("crd1")
-let img2 = document.getElementById("cbi1")
-
-krd1.addEventListener('mouseenter', () => {
-img2.src ="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovbSsLQJf2PLacDBA5ciJlY20hPbkI7PYhG5u5cRjiOXE_JbwjGu4ohQ0J3elJdWTdFI2Zg7R_Fftkuy615DotZjOzXJh7yRwtH7Vlkbi0x1ObOM6m7XAHnYa2D_s"
-
-  
-});
-krd1.addEventListener('mouseleave', () => {
-img2.src ="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovbSsLQJf3qr3czxb49KzgL-KmsjxPr7Dl2dV18hwmOvN8IXvjVCLpxo7Oy3tIdLEdgdqNAmBqFa_kO3mh8K9uJqbyiMy7HIn5H3VzUPl1B0dO7M7hOveFwvYitsMFw"
-
-});
