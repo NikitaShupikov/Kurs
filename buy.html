@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="buy.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Rubik+Mono+One&family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Mono+One&family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+<div class="logo" onclick="home()">
+   <img class="logoimg" src="./images/Group 2.png" alt="">
+   <span class="logotxt">Nigma<span class="t2">Market</span></span>
+</div>
+<div class="btns">
+    <a class="btn" href="sell.html">Купить</a>
+    <a class="btn" href="buy.html">Продать</a>
+    <span class="btn1" id="trigger" href="">Полезное</span>
+        <div class="dropm" id="dropm" >
+        <div class="blockdrop" onclick="refka()"><span>Партнерка</span></div>
+    </div>
+</div>
+<div class="arrow" id="target"><span class="size">ˇ</span></div>
+ 
+<div onclick="social(5)" class="avtoriz">
+    <img class="steam" src="./images/icons8-steam-circled-100.png" alt="">
+    <span class="avt">Войти через Steam</span><span class="avtorz">Войти</span>
+</div>
+</header>
+
+<div class="main-container">
+ 
+    <div class="auth-warning">
+        <div class="warning-content">
+            <img src="./images/icons8-внимание-50.png" >
+            <div class="warning-text">
+                <p class="bp">Авторизируйтесь через Steam</p>
+                <p>Для того, чтобы обменять вещи на деньги.</p>
+            </div>
+        </div>
+        <div class="steam-auth-btn" onclick="social(5)">
+            <img src="./images/steam-50.png" alt="steam"> <span>Войти через Steam</span>
+        </div>
+    </div>
+
+    <div class="two-columns">
+        <div class="left-panel">
+            <div class="trade-link-block">
+                <span class="textlink">Вставьте свою ссылку на обмен</span>
+                <input type="text" class="inpt" placeholder="https://steamcommunity.com/tradeoffer/new/?partner=....">
+            </div>
+
+            <div class="filter-bar">
+                <div class="games-group">
+                    <img src="./images/icons8-counter-strike-50.png"  >
+                    <img src="./images/icons8-dota-2-100.png"  >
+                    <img src="./images/icons8-rust-96.png"  >
+                </div>
+                <div class="filter-item">
+                    <img src="./images/icons8-search-96.png" > <span>Поиск по скинам</span>
+                </div>
+                <div class="filter-item">
+                    <img src="./images/Group 7.png" > <span>Цена</span>
+                </div>
+                <div class="filter-item" id="selectAllBtn">
+                    <div class="circl" style="width:14px;height:14px;border-radius:50%;border:1px solid #aaa;"></div>
+                    <span>Выбрать все</span>
+                </div>
+                <div class="filter-item">
+                    <img src="./images/icons8-update-100.png" alt="update"> <span>Обновить</span>
+                </div>
+            </div>
+            <div class="cardscont" >
+        <div class="cards"><span class="sp1">FN</span><span class="qw">dds </span><img class="imgs" src="./images/3.png" alt=""><span class="sp2">Волны emerald</span><p class="sp3">$ 1550</p></div>
+        <div class="cards"><span class="sp1">BS</span><span class="qw">dds </span><img class="imgs" src="./images/16.png" alt=""><span class="sp2">рентген</span><p class="sp3">$ 990</p></div>
+        <div class="cards"><span class="sp1">FT</span><span class="qw">dds </span><img class="imgs" src="./images/4.png" alt=""><span class="sp2">Гунгнир</span><p class="sp3">$ 2475</p></div>
+        <div class="cards"><span class="sp1">BS</span><span class="qw">dds </span><img class="imgs" src="./images/5.png" alt=""><span class="sp2">Волны ruby</span><p class="sp3">$ 183</p></div>
+        <div class="cards"><span class="sp1">FN</span><span class="qw">dds </span><img class="imgs" src="./images/6.png" alt=""><span class="sp2">Fire jacket</span><p class="sp3">$ 2255</p></div>
+        <div class="cards"><span class="sp1">BS</span><span class="qw">dds </span><img class="imgs" src="./images/15.png" alt=""><span class="sp2">Волны emerald</span><p class="sp3">$ 384</p></div>
+        <div class="cards"><span class="sp1">BS</span><span class="qw">dds </span><img class="imgs" src="./images/14.png" alt=""><span class="sp2">Ящик пандоры</span><p class="sp3">$ 593</p></div>
+        <div class="cards"><span class="sp1">FN</span><span class="qw">dds </span><img class="imgs" src="./images/7.png" alt=""><span class="sp2">Neon Dragon </span><p class="sp3">$ 1238</p></div>
+        <div class="cards"><span class="sp1">FT</span><span class="qw">dds </span><img class="imgs" src="./images/8.png" alt=""><span class="sp2">Glory ak47</span><p class="sp3">$ 3536</p></div>
+        <div class="cards"><span class="sp1">MW</span><span class="qw">dds </span><img class="imgs" src="./images/11.png" alt=""><span class="sp2">Unusual jumo</span><p class="sp3">$ 1388</p></div>
+        <div class="cards"><span class="sp1">BS</span><span class="qw">dds </span><img class="imgs" src="./images/9.png" alt=""><span class="sp2">Inscribed crimson</span><p class="sp3">$ 123</p></div>
+        <div class="cards"><span class="sp1">FN</span><span class="qw">dds </span><img class="imgs" src="./images/13.png" alt=""><span class="sp2">Genuine Axe</span><p class="sp3">$ 321</p></div>
+        <div class="cards"><span class="sp1">FT</span><span class="qw">dds </span><img class="imgs" src="./images/10.png" alt=""><span class="sp2">Рыцарь</span><p class="sp3">$ 456</p></div>
+        <div class="cards"><span class="sp1">MW</span><span class="qw">dds </span><img class="imgs" src="./images/12.png" alt=""><span class="sp2">M24 Вой</span><p class="sp3">$ 987</p></div>
+            </div>
+        </div>
+
+
+        <div class="right-panel">
+            <div class="selection-summary">
+                <div class="selected-count">Выбрано  <x class="x">0</x> предметов на сумму</div>
+                <div class="total-price" id="totalPriceDisplay">€ 0</div>
+            </div>
+            <div class="pay-methods">
+                <div class="pay-method-card"><img src="./images/visa.png" alt="visa"></div>
+                <div class="pay-method-card"><img src="./images/master.png" alt="mastercard"></div>
+                <div class="pay-method-card"><img src="./images/mir.png" alt="mir"></div>
+                <div class="pay-method-card"><img src="./images/usdt.png" alt="usdt"></div>
+                <div class="pay-method-card"><img src="./images/trx.png" alt="trx"></div>
+                <div class="pay-method-card"><img src="./images/bitcoin.png" alt="btc"></div>
+                <div class="pay-method-card"><img src="./images/eth.png" alt="eth"></div>
+                <div class="pay-method-card"><img src="./images/sol.png" alt="sol"></div>
+                <div class="pay-method-card"><img src="./images/erc.png" alt="erc"></div>
+            </div>
+            <div class="sell-btn" id="sellNowBtn"><span>Продать выбранное</span></div>
+            <div class="min-sum-note">Минимальная сумма 0.84€</div>
+        </div>
+    </div>
+ 
+    <div class="info-section">
+        <div class="info-text">
+            Хочешь продать скины CS2, Rust или Dota 2? Тогда тебе на Nigma market.
+            Здесь ты можешь, совершенно не напрягаясь сдать свои скины в любом количестве,
+            моментально получив реальные средства на любую платежную систему или банковскую карту.
+            Никаких аукционов, поисков покупателя и сложных схем. Все просто: зайди через аккаунт Steam,
+            выбери вещи Rust, КС2 или Дота 2 из инвентаря, которые тебе мешают и получи деньги в течение нескольких секунд.
+            Nigma market — это самый легкий и надежный способ вывести скины в реальные деньги.
+        </div>
+    </div>
+</div>
+
+ 
+            <div class="footer">
+                <div class="boxfooter1">
+                    <div class="footlogo" onclick="home()">
+                        <img src="./images/Group 2.png" class="flogo">
+                        <span class="flogotxt">Nigma<span class="ft2">Market</span>
+                    </div>
+                    <div class="footblocktext">Nigma market — сайт по покупке, продаже и <br>
+                        обмену предметов в Dota2, CS2, TF2, Gifts</div>
+                    <div class="footersocial">
+                        <div onclick="social(1)" class="social1"><img class="icn" src="./images/discord.png"><span class="icntext">Discord</span></div>
+                        <div onclick="social(2)" class="social2"><img class="icn" src="./images/telega.png"><span class="icntext">Telegram</span></div>
+                        <div onclick="social(3)" class="social3"><img class="icn" src="./images/vk.png"><span class="icntext">Vkontakte</span></div>
+                        <div onclick="social(4)" class="social4"><img class="icn1" src="./images/steam-50.png"><span class="icntext">Steam</span></div>
+                    </div>
+                </div>
+                <div class="boxfooter2">
+                    
+                    <div class="grupsfooter1">
+                        <div class="boxft0"><span class="grfttxt">Маркет</span></div>  
+                        <div class="boxft1"><span class="ftrtext">Купить</span></div>
+                        <div class="boxft"><span class="ftrtext">Продажа</span></div> 
+                        <div class="boxft"><span class="ftrtext">Вывод средств</span></div>
+
+                    </div>
+                    
+                    <div class="grupsfooter" >
+                        <div class="boxft0"><span class="grfttxt">Помощь</span></div> 
+                        <div class="boxft1"><span class="ftrtext">Контакты</span></div> 
+                        <div class="boxft"><span class="ftrtext">Поддержка</span></div> 
+                        <div class="boxft"><span class="ftrtext">FAQ</span></div>
+
+                    </div>
+                    
+                    <div class="grupsfooter3" >
+                        <div class="boxft0"><span class="grfttxt">Полезное</span></div> 
+                        <div class="boxft1"><span class="ftrtext">Политика конфиденциальности</span></div> 
+                        <div class="boxft"><span class="ftrtext">Условия использования</span></div> 
+                        <div class="boxft"><span class="ftrtext">Правила торговли</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="footer1">
+                <div class="boxfooter1">
+                    <div class="footlogo" onclick="home()">
+                        <img src="./images/Group 2.png" class="flogo">
+                        <span class="flogotxt">Nigma<span class="ft2">Market</span>
+                    </div>
+                    <div class="footblocktext">Nigma market — сайт по покупке, продаже и <br>
+                        обмену предметов в Dota2, CS2, TF2, Gifts</div>
+                    <div class="footersocial">
+                        <div class="social1" onclick="social(1)"><img class="icn" src="./images/discord.png"><span class="icntext">Discord</span></div>
+                        <div class="social2" onclick="social(2)"><img class="icn" src="./images/telega.png"><span class="icntext">Telegram</span></div>
+                        <div class="social3" onclick="social(3)"><img class="icn" src="./images/vk.png"><span class="icntext">Vkontakte</span></div>
+                        <div class="social4" onclick="social(4)"><img class="icn1" src="./images/steam-50.png"><span class="icntext">Steam</span></div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+<script>
+
+
+
+ 
+ 
+
+ 
+    function home() {
+        window.location.href = 'home.html';
+    }
+
+    function social(c) {
+        switch(c){
+            case 1: window.open("https://discord.com/"); break;
+            case 2: window.open("https://web.telegram.org/"); break;
+            case 3: window.open('https://vk.com/'); break;
+            case 4: window.open('https://steamcommunity.com/'); break;
+            case 5: window.open('https://store.steampowered.com/?l=russian'); break;
+        }
+    }
+
+ 
+const trigger = document.getElementById('trigger');
+const target = document.getElementById('target');
+const dropm = document.getElementById('dropm');
+
+trigger.addEventListener('mouseenter', () => {
+  target.classList.add('flip');
+  target.style.color= "white"
+  target.style.marginTop = "0.5%"
+  dropm.style.display = "flex"
+  
+});
+trigger.addEventListener('mouseleave', () => {
+  target.classList.remove('flip');
+target.style.color= "#798491"
+target.style.marginTop = "0%"
+dropm.style.display = "none"
+});
+dropm.addEventListener('mouseenter', () => {
+
+dropm.style.display = "flex"
+});
+dropm.addEventListener('mouseleave', () => {
+
+dropm.style.display = "none"
+});
+function refka(){
+   window.location.href = 'ref.html'
+}
+    
+</script>
+</body>
+</html>

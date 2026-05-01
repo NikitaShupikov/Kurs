@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="sell.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Rubik+Mono+One&family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Mono+One&family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
+</head>
+<header>
+<div class="logo" onclick="home()">
+   <img class="logoimg" src="./images/Group 2.png" alt="">
+   <span class="logotxt">Nigma<span class="t2">Market</span></span>
+   
+</div>
+<div class="btns">
+    <a class="btn" href="sell.html">Купить</a>
+    <a class="btn" href="buy.html">Продать</a>
+    <span class="btn1" id="trigger" href="">Полезное</span>
+        <div class="dropm" id="dropm" >
+        <div class="blockdrop" onclick="refka()"><span>Партнерка</span></div>
+    </div>
+</div>
+<div class="arrow" id="target"><span class="size">ˇ</span></div>
+ 
+<div onclick="social(5)" class="avtoriz">
+    <img class="steam" src="./images/icons8-steam-circled-100.png" alt="">
+    <span class="avt">Войти через Steam</span><span class="avtorz">Войти</span>
+</div>
+</header>
+<body>
+<div class="contblock">
+    <div class="block1">
+        <div class="box1" id="buttnbox1">
+            <img src="./images/icons8-counter-strike-100.png" class="b1imgcs" id="boximg">
+            <span id="arrowbox1" class="b1arrow">^</span>
+            <div class="menu" id="menu">
+                <div class="choise" id="choise1" onclick="ch(1)" style="background-color: rgb(54, 54, 63);"><img src="./images/icons8-counter-strike-100.png"> <span>CS2</span></div>
+                <div class="choise" id="choise2" onclick="ch(2)"><img src="./images/icons8-dota.png"><span>DOTA 2</span></div>
+                <div class="choise" id="choise3" onclick="ch(3)"><img src="./images/icons8-ржавчина-100.png"><span>RUST</span></div>
+            </div>
+        </div>
+        <div class="box2">
+            <input type="text" placeholder="Назвние скина" id="inp" onkeyup="poisk()">
+            <img src="./images/icons8-search-96.png">
+        </div>
+        <div class="box3" onclick="restart()" id="box3">
+            <span>Сбросить </span>
+            <img src="./images/icons8-reload-100.png" alt="" id="rel">
+        </div>
+        
+    </div>
+</div>
+    <div class="contosn">
+        <div class="contbl1">
+            <div class="blocltext">
+                <span>Фильтр</span>
+            </div>
+    
+        <div class="filtr"  id="filtrs0">
+            <label class="custom-checkbox" onclick="filtr(1)">
+                <input type="checkbox" id="cb1">
+                <span class="checkmark"></span>
+                <span class="sueta">Ножик</span>
+            </label>
+        </div>
+        <div class="filtr"  id="filtrs1">
+            <label class="custom-checkbox" onclick="filtr(2)">
+                <input type="checkbox" id="cb2">
+                <span class="checkmark"></span>
+                <span class="sueta">АК47</span>
+            </label>
+        </div>
+        <div class="filtr"  id="filtrs2">
+            <label class="custom-checkbox"onclick="filtr(3)">
+                <input type="checkbox" id="cb3">
+                <span class="checkmark"></span>
+                <span class="sueta2">AWP</span>
+            </label>
+        </div>
+        <div class="filtr"  id="filtrs3" >
+            <label class="custom-checkbox"onclick="filtr(4)">
+                <input type="checkbox" id="cb4">
+                <span class="checkmark"></span>
+                <span class="sueta1">Перчатки</span>
+            </label>
+        </div>
+                <div class="filtr"  id="filtrs4">
+            <label class="custom-checkbox"onclick="filtr(5)">
+                <input type="checkbox" id="cb5">
+                <span class="checkmark"></span>
+                <span class="sueta">Украшение </span>
+            </label>
+        </div>
+                <div class="filtr"  id="filtrs5" >
+            <label class="custom-checkbox"onclick="filtr(6)">
+                <input type="checkbox" id="cb6">
+                <span class="checkmark"></span>
+                <span class="sueta">Предмет</span>
+            </label>
+        </div>
+                        <div class="filtr"  id="filtrs6">
+            <label class="custom-checkbox" onclick="filtr(7)">
+                <input type="checkbox" id="cb7">
+                <span class="checkmark"></span>
+                <span class="sueta">Броня</span>
+            </label>
+        </div>
+                        <div class="filtr"  id="filtrs7">
+            <label class="custom-checkbox"onclick="filtr(8)">
+                <input type="checkbox" id="cb8">
+                <span class="checkmark"></span>
+                <span class="sueta">Оружие </span>
+            </label>
+        </div>
+                        <div class="filtr"  id="filtrs8">
+            <label class="custom-checkbox"onclick="filtr(9)">
+                <input type="checkbox" id="cb9">
+                <span class="checkmark"></span>
+                <span class="sueta">Разное </span>
+            </label>
+        </div>
+        </div>
+
+        <div class="contbl2" id="cont2">
+                        <div class="cards"  id="crd0" ><div class="cardbl"><div class="cb1"><img src="" id="cbi0"></div><div class="cb2">  <span id="cba0" ></span>  </div><div class="cb3">  <span  id="cbb0" ></span> <span id="cb$0" ></span> </div><div class="cb4">  <span id="cbc0"  class="name"></span>  </div></div>  <div class="button">Купить</div> </div> 
+            <div class="cards"  id="crd1" ><div class="cardbl"><div class="cb1"><img class="uepis" src="" id="cbi1"></div><div class="cb2">  <span id="cba1" ></span>  </div><div class="cb3">  <span  id="cbb1" ></span> <span id="cb$1" ></span> </div><div class="cb4">  <span id="cbc1"  class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd2" ><div class="cardbl"><div class="cb1"><img src="" id="cbi2"></div><div class="cb2">  <span id="cba2" ></span>  </div><div class="cb3">  <span  id="cbb2" ></span> <span id="cb$2" ></span> </div><div class="cb4">  <span id="cbc2"  class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd3" ><div class="cardbl"><div class="cb1"><img src="" id="cbi3"></div><div class="cb2">  <span id="cba3" ></span>  </div><div class="cb3">  <span  id="cbb3" ></span> <span id="cb$3" ></span> </div><div class="cb4">  <span id="cbc3"  class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd4" ><div class="cardbl"><div class="cb1"><img src="" id="cbi4"></div><div class="cb2">  <span id="cba4" ></span>  </div><div class="cb3">  <span  id="cbb4" ></span> <span id="cb$4" ></span> </div><div class="cb4">  <span id="cbc4"  class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd5" ><div class="cardbl"><div class="cb1"><img src="" id="cbi5"></div><div class="cb2">  <span id="cba5" ></span>  </div><div class="cb3">  <span  id="cbb5" ></span> <span id="cb$5" ></span> </div><div class="cb4">  <span id="cbc5"  class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd6" ><div class="cardbl"><div class="cb1"><img src="" id="cbi6"></div><div class="cb2">  <span id="cba6" ></span>  </div><div class="cb3">  <span  id="cbb6" ></span> <span id="cb$6" ></span> </div><div class="cb4">  <span id="cbc6"  class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd7" ><div class="cardbl"><div class="cb1"><img src="" id="cbi7"></div><div class="cb2">  <span id="cba7" ></span>  </div><div class="cb3">  <span  id="cbb7" ></span> <span id="cb$7" ></span> </div><div class="cb4">  <span id="cbc7"  class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd8" ><div class="cardbl"><div class="cb1"><img src="" id="cbi8"></div><div class="cb2">  <span id="cba8" ></span>  </div><div class="cb3">  <span  id="cbb8" ></span> <span id="cb$8" ></span> </div><div class="cb4">  <span id="cbc8"  class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd9" ><div class="cardbl"><div class="cb1"><img src="" id="cbi9"></div><div class="cb2">  <span id="cba9" ></span>  </div><div class="cb3">  <span  id="cbb9" ></span> <span id="cb$9" ></span> </div><div class="cb4">  <span id="cbc9"  class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd10"><div class="cardbl"><div class="cb1"><img src="" id="cbi10"></div><div class="cb2"> <span id="cba10"></span>  </div><div class="cb3">  <span  id="cbb10"></span> <span id="cb$10"></span> </div><div class="cb4">  <span id="cbc10" class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd11"><div class="cardbl"><div class="cb1"><img src="" id="cbi11"></div><div class="cb2"> <span id="cba11"></span>  </div><div class="cb3">  <span  id="cbb11"></span> <span id="cb$11"></span> </div><div class="cb4">  <span id="cbc11" class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd12"><div class="cardbl"><div class="cb1"><img src="" id="cbi12"></div><div class="cb2"> <span id="cba12"></span>  </div><div class="cb3">  <span  id="cbb12"></span> <span id="cb$12"></span> </div><div class="cb4">  <span id="cbc12" class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd13"><div class="cardbl"><div class="cb1"><img src="" id="cbi13"></div><div class="cb2"> <span id="cba13"></span>  </div><div class="cb3">  <span  id="cbb13"></span> <span id="cb$13"></span> </div><div class="cb4">  <span id="cbc13" class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd14"><div class="cardbl"><div class="cb1"><img src="" id="cbi14"></div><div class="cb2"> <span id="cba14"></span>  </div><div class="cb3">  <span  id="cbb14"></span> <span id="cb$14"></span> </div><div class="cb4">  <span id="cbc14" class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd15"><div class="cardbl"><div class="cb1"><img src="" id="cbi15"></div><div class="cb2"> <span id="cba15"></span>  </div><div class="cb3">  <span  id="cbb15"></span> <span id="cb$15"></span> </div><div class="cb4">  <span id="cbc15" class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd16"><div class="cardbl"><div class="cb1"><img src="" id="cbi16"></div><div class="cb2"> <span id="cba16"></span>  </div><div class="cb3">  <span  id="cbb16"></span> <span id="cb$16"></span> </div><div class="cb4">  <span id="cbc16" class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd17"><div class="cardbl"><div class="cb1"><img src="" id="cbi17"></div><div class="cb2"> <span id="cba17"></span>  </div><div class="cb3">  <span  id="cbb17"></span> <span id="cb$17"></span> </div><div class="cb4">  <span id="cbc17" class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd18"><div class="cardbl"><div class="cb1"><img src="" id="cbi18"></div><div class="cb2"> <span id="cba18"></span>  </div><div class="cb3">  <span  id="cbb18"></span> <span id="cb$18"></span> </div><div class="cb4">  <span id="cbc18" class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd19"><div class="cardbl"><div class="cb1"><img src="" id="cbi19"></div><div class="cb2"> <span id="cba19"></span>  </div><div class="cb3">  <span  id="cbb19"></span> <span id="cb$19"></span> </div><div class="cb4">  <span id="cbc19" class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd20"><div class="cardbl"><div class="cb1"><img src="" id="cbi20"></div><div class="cb2"> <span id="cba20"></span>  </div><div class="cb3">  <span  id="cbb20"></span> <span id="cb$20"></span> </div><div class="cb4">  <span id="cbc20" class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd21"><div class="cardbl"><div class="cb1"><img src="" id="cbi21"></div><div class="cb2"> <span id="cba21"></span>  </div><div class="cb3">  <span  id="cbb21"></span> <span id="cb$21"></span> </div><div class="cb4">  <span id="cbc21" class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd22"><div class="cardbl"><div class="cb1"><img src="" id="cbi22"></div><div class="cb2"> <span id="cba22"></span>  </div><div class="cb3">  <span  id="cbb22"></span> <span id="cb$22"></span> </div><div class="cb4">  <span id="cbc22" class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="cards"  id="crd23"><div class="cardbl"><div class="cb1"><img src="" id="cbi23"></div><div class="cb2"> <span id="cba23"></span>  </div><div class="cb3">  <span  id="cbb23"></span> <span id="cb$23"></span> </div><div class="cb4">  <span id="cbc23" class="name"></span>  </div></div>  <div class="button">Купить</div> </div>
+            <div class="notifbox" id="notifbox">
+                <span id="notifc">К сожалению, ничего не найдено</span>
+                <img src="./images/image-Photoroom.png" alt="">
+            </div>
+        </div>
+    </div>        
+
+<div class="contnotif" id="contnotif" event>
+    <div class="notif" id="notif">
+        <div class="notifbox1"><img src="./images/loginToSteam.png" alt=""></div>
+        <div class="notifbox2"><span>Войдите в Steam чтобы купить скины</span></div>
+
+        <div class="notifbox4"><div class="notifbutton" onclick="social(5)">Войти через steam</div></div>
+    </div>
+</div>
+</body>
+<div class="footer">
+                <div class="boxfooter1">
+                    <div class="footlogo" onclick="home()">
+                        <img src="./images/Group 2.png" class="flogo">
+                        <span class="flogotxt">Nigma<span class="ft2">Market</span>
+                    </div>
+                    <div class="footblocktext">Nigma market — сайт по покупке, продаже и <br>
+                        обмену предметов в Dota2, CS2, TF2, Gifts</div>
+                    <div class="footersocial">
+                        <div onclick="social(1)" class="social1"><img class="icn" src="./images/discord.png"><span class="icntext">Discord</span></div>
+                        <div onclick="social(2)" class="social2"><img class="icn" src="./images/telega.png"><span class="icntext">Telegram</span></div>
+                        <div onclick="social(3)" class="social3"><img class="icn" src="./images/vk.png"><span class="icntext">Vkontakte</span></div>
+                        <div onclick="social(4)" class="social4"><img class="icn1" src="./images/steam-50.png"><span class="icntext">Steam</span></div>
+                    </div>
+                </div>
+                <div class="boxfooter2">
+                    
+                    <div class="grupsfooter1">
+                        <div class="boxft0"><span class="grfttxt">Маркет</span></div>  
+                        <div class="boxft1"><span class="ftrtext">Купить</span></div>
+                        <div class="boxft"><span class="ftrtext">Продажа</span></div> 
+                        <div class="boxft"><span class="ftrtext">Вывод средств</span></div>
+
+                    </div>
+                    
+                    <div class="grupsfooter" >
+                        <div class="boxft0"><span class="grfttxt">Помощь</span></div> 
+                        <div class="boxft1"><span class="ftrtext">Контакты</span></div> 
+                        <div class="boxft"><span class="ftrtext">Поддержка</span></div> 
+                        <div class="boxft"><span class="ftrtext">FAQ</span></div>
+
+                    </div>
+                    
+                    <div class="grupsfooter3" >
+                        <div class="boxft0"><span class="grfttxt">Полезное</span></div> 
+                        <div class="boxft1"><span class="ftrtext">Политика конфиденциальности</span></div> 
+                        <div class="boxft"><span class="ftrtext">Условия использования</span></div> 
+                        <div class="boxft"><span class="ftrtext">Правила торговли</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="footer1">
+                <div class="boxfooter1">
+                    <div class="footlogo" onclick="home()">
+                        <img src="./images/Group 2.png" class="flogo">
+                        <span class="flogotxt">Nigma<span class="ft2">Market</span>
+                    </div>
+                    <div class="footblocktext">Nigma market — сайт по покупке, продаже и <br>
+                        обмену предметов в Dota2, CS2, TF2, Gifts</div>
+                    <div class="footersocial">
+                        <div class="social1" onclick="social(1)"><img class="icn" src="./images/discord.png"><span class="icntext">Discord</span></div>
+                        <div class="social2" onclick="social(2)"><img class="icn" src="./images/telega.png"><span class="icntext">Telegram</span></div>
+                        <div class="social3" onclick="social(3)"><img class="icn" src="./images/vk.png"><span class="icntext">Vkontakte</span></div>
+                        <div class="social4" onclick="social(4)"><img class="icn1" src="./images/steam-50.png"><span class="icntext">Steam</span></div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+<script src="sell.js"></script> 
+</html>

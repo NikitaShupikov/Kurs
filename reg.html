@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg.css">
+ <link rel="preload" href="WDXLLubrifontSC-Regular.ttf" as="font" type="font/ttf" crossorigi>
+</head>
+<body>
+    <div class="form" id="fr1">
+        <div class="top">
+            <Span id="regs">Регистрация</Span><Span id="entr">Вход</Span>
+        </div>
+
+    
+        <div class="forma">
+            <form action="Home.html">
+            <input minlength="3" maxlength="9" type="text" class="log" id="name" required placeholder="Лoгин">
+            <label id="nm" for="name">Логин</label>
+            <input minlength="5" type="password" class="pasw" id="parol" required placeholder="Пароль">  
+            <label id="ps" class="label" for="parol">Пароль</label>
+            <input  type="email" class="pasw" id="email" required placeholder="Почта">  
+            <label id="ps1" class="label1" for="parol">Email</label>
+            <button id="adduser">Сохранить</button></form>
+        </div>
+        <div class="linkhome" onclick="homless()"><Span>На главную</Span></div>
+    </div> 
+    
+
+    <button onclick="save()" class="save">Сохранить</button>
+  <script src="reg.js"></script>  
+</body>
+
+</html>

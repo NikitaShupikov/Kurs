@@ -1,0 +1,469 @@
+@font-face {
+    font-family: 'WDXL'; 
+    src: url('WDXLLubrifontSC-Regular.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal;
+    font-display: swap; 
+}
+body{
+    background: linear-gradient(90deg,rgb(86, 76, 183), #2c303a);
+    font-family: 'WDXL'; 
+    display: flex;
+    justify-content: center;
+}
+.W{
+    margin-top: 14%;
+    color: white;
+    font-size: 9vw;
+    animation: w 2.3s;
+    opacity: 0; 
+    position: absolute;
+}
+.linkhome{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+}
+.linkhome span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 2vw;
+
+        margin-top: 1%;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1vw;
+    background:#6a5dae;
+    border-radius:0.8vw;
+    height: 36%;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+.linkhome span:hover{
+color: blue;
+}
+
+.form{
+    width: 34vw;
+    height: 45vw;
+    background-color: rgb(22,23,43,0.8);
+    animation: form 3.5s;
+    margin-top: 0.5%;
+    border-radius: 3vw;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 16px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+}
+.form2{
+    margin-top: 1vw;
+    width: 33.5vw;
+    height: 44vw; 
+    border-radius: 3vw;
+    position: absolute;
+    background-color: rgb(22,23,43);
+    z-index: -1000;
+}
+.form::after{
+    position: absolute;
+    content: "";
+    background-color: rgb(22,23,43,0.99999);
+    inset: 5px;
+    border-radius: 3vw;
+    z-index: -10;
+}
+.form::before{
+    position: absolute;
+    content: "";
+    width: 7vw;
+    height: 150%;
+    background: linear-gradient(#b1b1b1,rgb(163, 163, 163));
+    animation: rotate 4.5s linear infinite;
+    left:50% ;
+    bottom: -20%;
+    z-index: -100;
+}
+
+@keyframes rotate {
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@media(max-width:400px){
+    body{
+    background: linear-gradient(to right,#6a5dae,#c96bb0);
+    }
+    .form{
+    position: relative;
+    top: 100px;
+    width: 70%;
+    height: 55vh;
+    margin-top: 2%;
+    border-radius: 3vw;
+    }
+    .form2{
+    position: absolute;
+    top: 100px;
+    width: 65%;
+    height: 54vh;
+    margin-top: 5%;
+    border-radius: 3vw;
+    }
+    .W{
+        opacity: 1;
+    }
+    /* @keyframes w {  
+    0% {  
+        opacity: 0;  
+    }  
+    80%{  
+        opacity: 1;  
+    }  
+    100%{
+        opacity: 1;
+    }
+    }   */
+.form::before{
+    width: 50px;
+    height: 150%;
+}
+}
+/* @keyframes form {
+      0% {  
+        opacity: 0;  
+    }  
+        50%{  
+        opacity: 0;  
+    } 
+        100%{
+        opacity: 1;
+    }
+} */
+ span{
+    margin-top: 1%;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5vw;
+    background:#6a5dae;
+    border-radius:0.8vw;
+    height: 36%;
+    transition: 0.5s;
+ }
+ span:hover{
+     background:hwb(250 19% 37%);
+ }
+ .top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-items: center;
+    width: 98%;
+    margin-left: 1%;
+    height: 15%;
+    border-bottom: 1px solid white;
+ }
+  .line{
+    width: 98%;
+    margin-left: 1%;
+    height: 1.1vw;
+    border-bottom: 1px solid white;
+ }
+
+ .foto{
+    width: 100%;
+    height: 30%;
+ }
+ .forma{
+    width: 100%;
+    height: 54%;
+    margin-top: 11%;
+ }
+ input,button{
+    width:65%;
+    height: 14%;
+    margin-left: 17.5%;
+    border-radius: 1vw;
+    margin-top: 20%;
+ }
+ .pasw{
+    margin-top: 3.5vw;
+ }
+ input{
+    margin-top: 5%;
+ }
+label{
+    position:absolute;
+    left: 6vw;
+    top: 10.5vw;
+    color: white;
+    font-size: 1.3vw;
+
+ }
+.label,.label1{
+    position:absolute;
+    left: 6vw;
+    top: 17.5vw;
+    color: white;
+    font-size: 1.3vw;
+}
+.label1{
+    top: 25vw;
+}
+
+ .myself{
+    width:65%;
+    height: 7%;
+    margin-left: 17.5%;
+    border-radius: 1vw;
+    margin-top: 17%;
+    z-index: 10000;
+ }
+ .city{
+    margin-top: 21%;
+    width:65%;
+    height: 7%;
+    z-index: 10000;
+ }
+.ct{
+    color: white;
+    font-size: 1.3vw;
+    position: absolute;
+    margin-top: -32%;
+    left: 17.9%;
+}
+.msf{
+    color: white;
+    font-size: 1.3vw;
+    position: absolute;
+    margin-top: -5%;
+    left: 17.9%;
+}
+.done{
+    width: 65%;
+    height: 3.5vw;
+    position: absolute;
+    bottom: 5vw;
+    left: -1.5vw;
+    font-size: 1.5vw;
+
+}
+ .done:hover{
+     background: -webkit-linear-gradient(90deg, #6c58d0,#db66bb);                     
+    background: linear-gradient(90deg, #6c58d0,#db66bb);
+    color: white;
+ }
+ button{
+    font-size: 1.3vw;
+    width:55%;
+    margin-left: 22.5%;
+
+ }
+ button:hover{
+    background: -webkit-linear-gradient(90deg, #6c58d0,#db66bb);                     
+    background: linear-gradient(90deg, #6c58d0,#db66bb); 
+    color: white;
+ }
+ form{
+      width: 100%;
+    height: 100%;  
+ } 
+
+ .proffoto{
+    width: 100%;
+    height: 100%;
+    border-radius: 4vw;
+ }
+ .prft{
+    width: 19.5%;
+    margin-left: 40%;
+    margin-top: 3%;
+    height: 50%;
+    border-radius: 4vw;
+ }
+ .ch{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+ }
+ .avatarki{
+    position: absolute;
+    width: 100%;
+    height: 25vw;
+        backdrop-filter: blur(10px);
+    background: rgba(22,23,43, 0.65);
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius:3vw ;
+    border-bottom-right-radius:3vw ;
+    display: none;
+    flex-wrap: wrap;
+    z-index: 1000;
+ }
+ .cont1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around   ;
+ }
+.box{
+    width: 6.5vw;
+    height: 6.5vw;
+    margin-left: 1.5%;
+    margin-top: 0.5%;
+    border:1px solid black ;
+    border-radius: 7vw; 
+    position:relative;
+    transition:  0.5s;
+}
+.box:hover{
+    transform: scale(1.08) 
+}
+
+
+.box.selected::after {
+    content: '';
+    position: absolute;
+    top: -3.5px;   
+    left: -3.5px;
+    right: -3.5px;
+    bottom: -3.5px;
+    border: 4px solid rgb(115, 222, 61);
+    border-radius: inherit; 
+    pointer-events: none;   
+    box-sizing: border-box;
+}
+ img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7vw;
+ }
+ .save{
+    width: 30%;
+    height: 3.5vw;
+    position: absolute;
+margin-top: 46.63vw;
+margin-right: 22vw;
+    font-size: 2vw;
+    display: none;
+ }
+ .save:hover{
+    background: rgb(22,23,43); 
+    color: white;
+ }
+ .r{
+    color: red;
+ }
+ @media(max-width: 400px){
+    input{
+        border-radius: 3vw;
+        margin-left: 20%;
+    }
+    button{
+        font-size: 2.5vw;
+        font-weight: 0.5vw;
+        border-radius: 3vw;
+        margin-left: 26%;
+    }
+    .prft{
+    border-radius: 7vw;
+    height: 45%;
+    }
+    .proffoto{
+    border-radius: 7vw;
+    }
+    .ch{
+    font-size: 3vw;
+    }
+    .avatarki{
+            width: 100%;
+    height: 52vw;
+    }
+    .box{
+          width: 14vw;
+    height: 14vw;  
+    }
+    .box.selected::after {
+    content: '';
+    position: absolute;
+    top: -2px;   
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid rgb(115, 222, 61);
+    border-radius: inherit; 
+    pointer-events: none;   
+    box-sizing: border-box;
+}
+ .save{
+    width: 35%;
+    height: 4.5vw;
+    position: absolute;
+    margin-top: 130.63vw;
+    margin-right: 22vw;
+    font-size: 3vw;
+    display: none;
+    align-items: center;
+    background: rgb(22,23,43); 
+    color: white;
+ }
+  label{
+    left: 3vw;
+    top: 32vw;
+        font-size: 3vw;
+ }
+.label{
+    left: 3vw;
+    top: 47vw;
+    font-size: 3vw;
+ }
+ .label1{
+    left: 3vw;
+    top: 61vw;
+    font-size: 3vw;
+ }
+  .top{
+    width: 96%;
+    margin-left: 2%;
+    height: 15%;
+    border-bottom: 1px solid white;
+ }
+   .top span{font-size: 3vw !important;
+ 
+ }
+.linkhome span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 5vw;
+
+        margin-top: 1%;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 3vw;
+    background:#6a5dae;
+    border-radius:0.8vw;
+    height: 36%;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+ }

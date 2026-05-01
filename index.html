@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="home.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Rubik+Mono+One&family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Mono+One&family=WDXL+Lubrifont+SC&display=swap" rel="stylesheet">
+</head>
+<header>
+<div class="logo" onclick="home()">
+   <img class="logoimg" src="./images/Group 2.png" alt="">
+   <span class="logotxt">Nigma<span class="t2">Market</span></span>
+</div>
+<div class="btns">
+    <a class="btn" href="sell.html">Купить</a>
+    <a class="btn" href="buy.html">Продать</a>
+    <span class="btn1" id="trigger" href="">Полезное</span>
+    <div class="dropm" id="dropm" >
+        <div class="blockdrop" onclick="refka()"><span>Партнерка</span></div>
+    </div>
+</div>
+<div class="arrow" id="target"><span class="size">ˇ</span></div>
+
+<div onclick="social(5)" class="avtoriz">
+    <img class="steam" src="./images/icons8-steam-circled-100.png" alt="">
+    <span class="avt">Войти через Steam</span><span class="avtorz">Войти</span>
+</div>
+</header>
+<body>
+    <div class="contadv">
+        <div class="adv">
+            <img src="images/adv.png" class="adve">
+        </div>
+    </div>
+    <div class="contframe2">
+        <div class="fr2">
+            <span class="fr2text">Обменивай скины на реальные деньги <colr class="cl">выгодно</colr></span>
+            <img class="fr" src="./images/Frame 2.png" >
+        </div>
+        <img src="./images/coin.png" class="coin">
+        <img src="./images/coin1.png" class="coin1">
+        <img src="./images/coin2.png" class="coin2">
+        <img src="./images/coin3.png" class="coin3">
+        <img src="./images/coin4.png" class="coin4">
+            <div onclick="social(5)" class="avtoriz1">
+        <span class="avt1">Войти через Steam </span><span class="avat01">Войти в Steam</span>
+        <span style="margin-left: 2%;margin-top: 0.4%;font-size: 1.5vw;">→</span>
+    </div>
+    </div>
+
+    <div class="continfo">
+        <div class="info">
+            <div class="contline">
+                <div class="line" ></div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line2"></div>  
+            </div>
+            <div class="conttag">
+                <span class="infotag1">Быстрые выплаты</span>
+                <span class="infotag2">Надежные сделки</span>
+                <span class="infotag3">Комиссия от 0%</span>
+                <span class="infotag4">Выгодно</span>
+            </div>
+            <div class="conttagtxt">
+                <div class="boxtagtxt">Среднее время поступления средств - 5 минут</div> 
+                <div class="boxtagtxt">Мы ценим ваше доверие. Безопасные платежи и полная защита сделок</div>
+                <div class="boxtagtxt">Мы не берем лишних комиссий за продажу предметов</div>
+                <div class="boxtagtxt">Самые выгодные цены! Дешевле, чем в Steam до 70%</div>
+            </div>
+
+
+            <div class="container1">
+                <span class="infotag1">Быстрые выплаты</span><br>
+                <div class="boxtagtxt">Среднее время поступления средств - 5 минут</div> 
+            </div>
+            <div class="container2">
+                <span class="infotag2">Надежные сделки</span><br>
+                <div class="boxtagtxt">Мы ценим ваше доверие. Безопасные платежи и полная защита сделок</div>
+            </div>
+            <div class="container1">
+                <span class="infotag3">Комиссия от 0%</span><br>
+                <div class="boxtagtxt">Мы не берем лишних комиссий за продажу предметов</div>
+            </div>
+            <div class="container2">
+                <span class="infotag4">Выгодно</span><br>
+                <div class="boxtagtxt">Самые выгодные цены! Дешевле, чем в Steam до 70%</div>
+            </div>
+        </div>
+    </div>
+        <div class="payment">
+            <div class="contpaym">
+                <span class="paymgroup"><img class="payimg"  src="./images/credit-card.png">CARD</span>
+                <span class="paymgroup"><img class="payimg"  src="./images/tether.png">Tether</span>
+                <span class="paymgroup"><img class="payimg1" src="./images/eth.png">Etherium</span>
+                <span class="paymgroup"><img class="payimg1" src="./images/bitcoin.png"><em>Bitcoin</em> </span>
+                <span class="paymgroup"><img class="payimg1" src="./images/social.png">Steam</span>
+                <span class="paymgroup"><img class="payimg2" src="./images/tron.png">Tron</span>
+            </div>
+        </div>
+
+        <div class="contblockinfo">
+                        <div class="blockinfo1">
+                <div class="boxinfo1" id="triggerinfo1" onclick="infoblock1(1)">
+                    <span class="infotxt">Где продать скины КС 2 быстро и безопасно?
+                        <img src="./images/arrowd.png" class="arrowimg1">
+                            <div class="gapchik"></div>
+                         <div class="sizew"><span class="description">Если вы задумались над тем, чтобы продать скины КС 2, то это необходимо делать с умом. И помочь в этом может Nigma Market – мы гарантируем честную и прозрачную торговлю скинами по самым приятным ценам.</span>
+                    </span></div>
+                    </div>
+                <div class="boxinfo2" id="triggerinfo2" onclick="infoblock1(2)">
+                    <span class="infotxt">Можно ли получить деньги за продажу на карту?
+                        <img src="./images/arrowd.png" class="arrowimg2">
+                        <div class="gapchik"></div>
+                         <div class="sizew"><span class="description">Возможность использовать свои денежные средства как захотите – это не привилегия, а базовый минимум. Поэтому у нас вы можете продать скины КС 2 с выводом на карту, получением денег на баланс сайта или же выводом в крипту. Мы предоставляем множество методов вывода, чтобы вы могли комфортно торговать своими скинами.</span>
+                    </span></div>
+                    </div>
+                <div class="boxinfo3" id="triggerinfo3" onclick="infoblock1(3)">
+                    <span class="infotxt">Из каких игр доступна продажа скинов на Nigma Market?
+                        <img src="./images/arrowd.png" class="arrowimg3">
+                        <div class="gapchik"></div>
+                         <div class="sizew"><span class="description">Мы предоставляем возможность не только продать скины КС, но и из других популярных игр. Прямо сейчас вы можете:
+                                                <br>● скины CS 2 без комиссии
+                                                <br>● скины Dota 2
+                                                <br>● скины Rust
+                         </span>
+                    </span></div>
+                    </div>
+                <div class="boxinfo4" id="triggerinfo4" onclick="infoblock1(4)">
+                    <span class="infotxt">Как быстро продать скины и получить деньги?
+                        <img src="./images/arrowd.png" class="arrowimg4">
+                        <div class="gapchik"></div>
+                         <div class="sizew"><span class="description">Для того, чтобы быстро продать свои скины CS 2, Dota 2 или же Rust следуйте этим простым шагам:
+                                            <br> <span class="otstup"> 1. Авторизуйтесь на сайте с помощью Steam;</span>
+                                            <br> <span class="otstup"> 2. Выберите игру в соответствии с вашим запросом;</span>
+                                            <br> <span class="otstup"> 3. Определитесь со скинами, которые хотите продать и посмотрите цены на них</span>
+                                            <br> <span class="otstup"> 4. Выберите способ оплаты и получите средства через 8 дней в связи с новыми правилами обмена в Steam.</span></span></div>
+                    </span>
+                    </div>
+                <div class="boxinfo5" id="triggerinfo5" onclick="infoblock1(5)">
+                    <span class="infotxt">На сайте доступна продажа и покупка скинов ?
+                        <img src="./images/arrowd.png" class="arrowimg5">
+                        <div class="gapchik"></div>
+                         <div class="sizew"><span class="description">На Nigma Market вы можете как продать скины CS 2, Dota 2 и Rust, так и купить их. У нас вы найдете миллионы разнообразных предметов по самым лучшим ценам, которые можно получить уже сейчас</span>
+                    </span></div>
+                    </div>
+                <div class="boxinfo6" id="triggerinfo6" onclick="infoblock1(6)">
+                    <span class="infotxt">Реферальная программа?
+                        <img src="./images/arrowd.png" class="arrowimg6">
+                        <div class="gapchik"></div>
+                         <div class="sizew"><span class="description">Скопируйте ссылку в личном кабинете и делитесь ею с теми, кто ещё не зарегистрирован на Nigma market. Как только приглашённый пользователь совершит продажу — вы начнёте получать с неё проценты.</span>
+                    </span></div>
+                    </div>
+            <div class="footer">
+                <div class="boxfooter1">
+                    <div class="footlogo">
+                        <img src="./images/Group 2.png" class="flogo" onclick="home()">
+                        <span class="flogotxt">Nigma<span class="ft2">Market</span>
+                    </div>
+                    <div class="footblocktext">Nigma market — сайт по покупке, продаже и <br>
+                        обмену предметов в Dota2, CS2, TF2, Gifts</div>
+                    <div class="footersocial">
+                        <div class="social1" onclick="social(1)"><img class="icn" src="./images/discord.png"><span class="icntext">Discord</span></div>
+                        <div class="social2" onclick="social(2)"><img class="icn" src="./images/telega.png"><span class="icntext">Telegram</span></div>
+                        <div class="social3" onclick="social(3)"><img class="icn" src="./images/vk.png"><span class="icntext">Vkontakte</span></div>
+                       <div class="social4" onclick="social(4)"><img class="icn1" src="./images/steam-50.png"><span class="icntext">Steam</span></div>
+                    </div>
+                </div>
+                <div class="boxfooter2">
+                    
+                    <div class="grupsfooter1">
+                        <div class="boxft0"><span class="grfttxt">Маркет</span></div>  
+                        <div class="boxft1"><span class="ftrtext">Купить</span></div>
+                        <div class="boxft"><span class="ftrtext">Продажа</span></div> 
+                        <div class="boxft"><span class="ftrtext">Вывод средств</span></div>
+
+                    </div>
+                    
+                    <div class="grupsfooter" >
+                        <div class="boxft0"><span class="grfttxt">Помощь</span></div> 
+                        <div class="boxft1"><span class="ftrtext">Контакты</span></div> 
+                        <div class="boxft"><span class="ftrtext">Поддержка</span></div> 
+                        <div class="boxft"><span class="ftrtext">FAQ</span></div>
+
+                    </div>
+                    
+                    <div class="grupsfooter3" >
+                        <div class="boxft0"><span class="grfttxt">Полезное</span></div> 
+                        <div class="boxft1"><span class="ftrtext">Конфиденциальность</span></div> 
+                        <div class="boxft"><span class="ftrtext">Условия использования</span></div> 
+                        <div class="boxft"><span class="ftrtext">Правила торговли</span></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            <div class="blockinfo">
+                <div class="boxinfo1" id="triggerinfo1" onclick="infoblock(1)">
+                    <span class="infotxt">Где продать скины КС 2 быстро и безопасно?
+                        <img src="./images/arrowd.png" class="arrowimg1">
+                            <div class="gapchik"></div>
+                         <span class="description">Если вы задумались над тем, чтобы продать скины КС 2, то это необходимо делать с умом. И помочь в этом может Nigma Market – мы гарантируем честную и прозрачную торговлю скинами по самым приятным ценам.</span>
+                    </span>
+                    </div>
+                <div class="boxinfo2" id="triggerinfo2" onclick="infoblock(2)">
+                    <span class="infotxt">Можно ли получить деньги за продажу на карту?
+                        <img src="./images/arrowd.png" class="arrowimg2">
+                        <div class="gapchik"></div>
+                         <span class="description">Возможность использовать свои денежные средства как захотите – это не привилегия, а базовый минимум. Поэтому у нас вы можете продать скины КС 2 с выводом на карту, получением денег на баланс сайта или же выводом в крипту. Мы предоставляем множество методов вывода, чтобы вы могли комфортно торговать своими скинами.</span>
+                    </span>
+                    </div>
+                <div class="boxinfo3" id="triggerinfo3" onclick="infoblock(3)">
+                    <span class="infotxt">Из каких игр доступна продажа скинов на Nigma Market?
+                        <img src="./images/arrowd.png" class="arrowimg3">
+                        <div class="gapchik"></div>
+                         <span class="description">Мы предоставляем возможность не только продать скины КС, но и из других популярных игр. Прямо сейчас вы можете:
+                                                <br>● скины CS 2 без комиссии
+                                                <br>● скины Dota 2
+                                                <br>● скины Rust
+                         </span>
+                    </span>
+                    </div>
+                <div class="boxinfo4" id="triggerinfo4" onclick="infoblock(4)">
+                    <span class="infotxt">Как быстро продать скины и получить деньги?
+                        <img src="./images/arrowd.png" class="arrowimg4">
+                        <div class="gapchik"></div>
+                         <span class="description">Для того, чтобы быстро продать свои скины CS 2, Dota 2 или же Rust следуйте этим простым шагам:
+                                            <br> <span class="otstup"> 1. Авторизуйтесь на сайте с помощью Steam;</span>
+                                            <br> <span class="otstup"> 2. Выберите игру в соответствии с вашим запросом;</span>
+                                            <br> <span class="otstup"> 3. Определитесь со скинами, которые хотите продать и посмотрите цены на них</span>
+                                            <br> <span class="otstup"> 4. Выберите способ оплаты и получите средства через 8 дней в связи с новыми правилами обмена в Steam.</span></span>
+                    </span>
+                    </div>
+                <div class="boxinfo5" id="triggerinfo5" onclick="infoblock(5)">
+                    <span class="infotxt">На сайте доступна продажа и покупка скинов ?
+                        <img src="./images/arrowd.png" class="arrowimg5">
+                        <div class="gapchik"></div>
+                         <span class="description">На Nigma Market вы можете как продать скины CS 2, Dota 2 и Rust, так и купить их. У нас вы найдете миллионы разнообразных предметов по самым лучшим ценам, которые можно получить уже сейчас</span>
+                    </span>
+                    </div>
+                <div class="boxinfo6" id="triggerinfo6" onclick="infoblock(6)">
+                    <span class="infotxt">Реферальная программа?
+                        <img src="./images/arrowd.png" class="arrowimg6">
+                        <div class="gapchik"></div>
+                         <span class="description">Скопируйте ссылку в личном кабинете и делитесь ею с теми, кто ещё не зарегистрирован на Nigma market. Как только приглашённый пользователь совершит продажу — вы начнёте получать с неё проценты.</span>
+                    </span>
+                    </div>
+            <div class="footer">
+                <div class="boxfooter1">
+                    <div class="footlogo" onclick="home()">
+                        <img src="./images/Group 2.png" class="flogo">
+                        <span class="flogotxt">Nigma<span class="ft2">Market</span>
+                    </div>
+                    <div class="footblocktext">Nigma market — сайт по покупке, продаже и <br>
+                        обмену предметов в Dota2, CS2, TF2, Gifts</div>
+                    <div class="footersocial">
+                        <div onclick="social(1)" class="social1"><img class="icn" src="./images/discord.png"><span class="icntext">Discord</span></div>
+                        <div onclick="social(2)" class="social2"><img class="icn" src="./images/telega.png"><span class="icntext">Telegram</span></div>
+                        <div onclick="social(3)" class="social3"><img class="icn" src="./images/vk.png"><span class="icntext">Vkontakte</span></div>
+                       <div onclick="social(4)" class="social4"><img class="icn1" src="./images/steam-50.png"><span class="icntext">Steam</span></div>
+                    </div>
+                </div>
+                <div class="boxfooter2">
+                    
+                    <div class="grupsfooter1">
+                        <div class="boxft0"><span class="grfttxt">Маркет</span></div>  
+                        <div class="boxft1"><span class="ftrtext">Купить</span></div>
+                        <div class="boxft"><span class="ftrtext">Продажа</span></div> 
+                        <div class="boxft"><span class="ftrtext">Вывод средств</span></div>
+
+                    </div>
+                    
+                    <div class="grupsfooter" >
+                        <div class="boxft0"><span class="grfttxt">Помощь</span></div> 
+                        <div class="boxft1"><span class="ftrtext">Контакты</span></div> 
+                        <div class="boxft"><span class="ftrtext">Поддержка</span></div> 
+                        <div class="boxft"><span class="ftrtext">FAQ</span></div>
+
+                    </div>
+                    
+                    <div class="grupsfooter3" >
+                        <div class="boxft0"><span class="grfttxt">Полезное</span></div> 
+                        <div class="boxft1"><span class="ftrtext">Политика конфиденциальности</span></div> 
+                        <div class="boxft"><span class="ftrtext">Условия использования</span></div> 
+                        <div class="boxft"><span class="ftrtext">Правила торговли</span></div>
+                    </div>
+                    <span class="copir">© 2026 Nigmamarket. All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+<script src="hhome.js"></script> 
+</html>
