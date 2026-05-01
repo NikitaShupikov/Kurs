@@ -53,7 +53,7 @@ function infoblock(a) {
 }
 
 function home(){
-  window.location.href = 'home.html'
+  window.location.href = 'index.html';
 }
 
 function infoblock1(a) {
