@@ -1,6 +1,6 @@
 
 function homless(){
- window.location.href = 'home.html'
+ window.location.href = 'index.html';
 }
 const reg = document.getElementById("regs")
 const entr = document.getElementById("entr")
